@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 2.8.10)
 
 project(glew)
 
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fPIC")
+
 if(MINGW OR UNIX)
   set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wno-attributes")
 endif()
